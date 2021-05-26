@@ -29,7 +29,10 @@ namespace Classes
             Employees = new List<Employee>();
         }
 
-
+        public void AddEmployee(Employee employee)
+        {
+            Employees.Add(employee);
+        }
         public void ListEmployees()
         {
             foreach (var employee in Employees)
