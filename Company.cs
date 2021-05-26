@@ -11,6 +11,7 @@ namespace Classes
         public DateTime CreatedOn { get; }
 
         // Create a public property for holding a list of current employees
+
         public List<Employee> Employees { get; set; }
 
         /*
@@ -21,7 +22,7 @@ namespace Classes
             The constructor will set the value of the public properties
 
         */
-
+        //Constructor Method for creating new instance of Company
         public Company(string name, DateTime createdOn)
         {
             Name = name;
@@ -29,10 +30,13 @@ namespace Classes
             Employees = new List<Employee>();
         }
 
+        //Add Employee Constructor for Company class
         public void AddEmployee(Employee employee)
         {
             Employees.Add(employee);
         }
+
+        //List Employee Constructor for Company class
         public void ListEmployees()
         {
             foreach (var employee in Employees)
